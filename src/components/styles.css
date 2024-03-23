@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+.bigText {
+  font-size: 25px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 40px;
+}
+nav {
+  display: flex;
+  /* border: 2px solid red; */
+  width: 90vw;
+  position: absolute;
+  top: 0;
+  left: 70px;
+  align-items: center;
+}
+
+.login-nav {
+  margin-right: 5px;
+}
+.nav-cont-1 {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.nav-cont-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.nav-ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 30%;
+}
+.nav-h2 {
+  margin: 0;
+  cursor: pointer;
+}
+.about-span {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+.about-span:hover {
+  color: #535bf2;
+}
+
+.cart-icon-cont {
+  color: inherit;
+}
+.nav-cart-count {
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  padding-right: 7px;
+  padding-left: 7px;
+  background-color: orangered;
+  border-radius: 100%;
+}
+/* ////////////////////////////////////////////////////// (hero.jsx) PAGE CSS*/
+
+.hero-cont {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #e195a0, #f5bcc5, white);
+
+  display: flex;
+  /* border: 3px solid black; */
+}
+
+.hero-text-cont {
+  flex: 5;
+  /* border: 2px solid purple; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text-wrapper {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hero-img-cont {
+  flex: 5;
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid orangered; */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-text-h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.hero-text-h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* /////////////////// CATEGORY CARD /////////////////////// */
+.category-card {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #3b3b3b, #746c6d, white);
+  /* margin: 5px; */
+}
+
+.cat-card-img-cont {
+  flex: 1;
+}
+
+/* /////////////////// PRODUCT CARD /////////////////////// */
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.product-card {
+  flex-basis: 30%;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 2px 7px #dfdfdf;
+  margin: 50px auto;
+  background: #fafafa;
+  font-family: "Roboto", sans-serif;
+
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.badge {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  background: red;
+  color: #fff;
+  padding: 3px 10px;
+}
+
+.product-tumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 50px;
+  background: #f0f0f0;
+}
+
+.product-tumb img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-details {
+  padding: 30px;
+}
+
+.product-catagory {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ccc;
+  margin-bottom: 18px;
+}
+
+.product-details h4 a {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #363636;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+  color: #fbb72c;
+}
+
+.product-details p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  color: #999;
+}
+
+.product-bottom-details {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.product-bottom-details div {
+  float: left;
+  width: 50%;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #fbb72c;
+  font-weight: 600;
+}
+
+.product-price small {
+  font-size: 80%;
+  font-weight: 400;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.product-links {
+  text-align: right;
+}
+
+.product-links a {
+  display: inline-block;
+  margin-left: 5px;
+  color: #272626;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.product-links a:hover {
+  color: #fbb72c;
+}
